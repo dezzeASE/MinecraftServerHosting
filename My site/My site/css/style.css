@@ -1,0 +1,173 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li{
+padding: 0;
+margin: 0;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+	background-color: #cedae3;
+}
+header {
+	width: 100%;
+	float: left;
+	background-color: #505160;
+	color: #e6e6e6;
+
+}
+header h2{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding-top: 22px;
+}
+header ul{
+	text-transform: uppercase;
+	font-size: 1.4em;
+	float: right;
+}
+
+header ul li{
+	float: left;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 80px;
+	padding: 22px 10px 0px 10px;
+	box-sizing: border-box;
+}
+
+header ul li:hover{
+	background-color: #436384;
+}
+
+header ul a:link, header ul a:visited{
+	color: #e6e6e6;
+}
+
+
+#banner-top{
+	width: 100%;
+	background-color: #68829E;
+	float: left;
+	padding: 40px 0px 40px 0px;
+}
+#banner-top h1{
+	font-size: 3.5em;
+
+	color: #e6e6e6;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+footer {
+	width: 100%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: #4a6b82;
+	float: left;
+	margin-top: 30px;
+}
+
+footer ul {
+	width: 100%;
+	padding-left: 30%;
+	padding-top: 5px;
+}
+footer ul li{
+	display: inline-block;
+	padding-right: 30px;
+}
+
+footer ul li a:link{
+	color: #FFF;
+}
+
+footer p {
+	padding-top: 10px;
+	text-align: center;
+	color: #FFF;
+}
+
+/*** Class elements ***/
+
+.container-fixed{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.active{
+	background-color: #436384;
+}
+
+.content-middle-para{
+	width: 90%;
+	float: left;
+	padding: 20px 0px 10px 0px;
+}
+
+.content-middle-para h3, p{
+	padding: 5px 5px 5px 15px;
+
+}
+
+.content-middle-para h3{
+	color: #fff;
+	background-color: #436384;
+	z-index: 5;
+	position: relative;
+	font-weight: normal;
+	top: 5px;
+}
+
+.content-middle-para p{
+	color: #343541;
+	background-color: #f9f9f9;
+	border-radius: 0px 0px 5px 5px;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 3px 5px 10px #888888;
+}
+
+
+
+/** Media Queries **/
+
+@media screen and (max-width: 1270px) {
+  header h2{
+  	display: none;
+  }
+
+}
+
+@media screen and (max-width: 762px) {
+  header ul li{
+  	display: block;
+  	float: none;
+  	width: 100%;
+  	background-color: #505160;
+  	text-align: center;
+  }
+  header ul {
+  	width: 100%;
+  }
+
+	.content-middle-para{
+	width: 90%;
+	float: left;
+	padding: 20px 0px 10px 0px;
+	margin-left: 5%;
+	}
+
+
+  .container-fixed{
+  	width: 100%;
+  	float: left;
+  }
+
+  header ul a:link, header ul a:visited{
+  	text-decoration: none;
+  }
+
+  #banner-top h1{
+  	font-size: 2.5em;
+  }
+}
